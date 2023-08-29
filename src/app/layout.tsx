@@ -38,6 +38,12 @@ export default function RootLayout({
           </nav>
         </header>
         <main className="container bg-red-600 mx-auto">{children}</main>
+        <footer className="container bg-red-600 mx-auto">
+          <p className="text-center text-white bg-blue-950 text-sm py-2">
+            Don&apos;t be pushed by your problems; be led by your dreams -
+            Richard Stallman | All Right Reserved
+          </p>
+        </footer>
       </body>
     </html>
   );
