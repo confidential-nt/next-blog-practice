@@ -6,7 +6,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Park's blog",
+  title: {
+    template: "Park's blog | %s",
+    default: "Park's blog",
+  },
   description: "Park의 블로그입니다.",
 };
 
