@@ -3,7 +3,7 @@ title: "goormlevel day6 풀이"
 description: "goormlevel day6 문제는 어떻게 풀면 좋을까?"
 date: "2023-07-30"
 category: "goormlevel"
-thumbnail: "goormlevel_thumbnail.jpg"
+thumbnail: "goormlevel_thumbnail.png"
 ---
 
 ### 링크
