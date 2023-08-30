@@ -1,3 +1,11 @@
+---
+title: "goormlevel day11 풀이"
+description: "goormlevel day11 문제는 어떻게 풀면 좋을까?"
+date: "2023-07-29"
+category: "goormlevel"
+thumbnail: "goormlevel_thumbnail.jpg"
+---
+
 ### 링크
 
 https://level.goorm.io/l/challenge/goormthon-challenge

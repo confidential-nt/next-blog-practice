@@ -1,3 +1,11 @@
+---
+title: "goormlevel day5 풀이"
+description: "goormlevel day5 문제는 어떻게 풀면 좋을까?"
+date: "2023-08-01"
+category: "goormlevel"
+thumbnail: "goormlevel_thumbnail.jpg"
+---
+
 ### 링크
 
 https://level.goorm.io/l/challenge/goormthon-challenge?utm_source=notion&utm_medium=cta&utm_content=open&_gl=1*1pc3p5q*_gcl_au*MTk1MjUwOTM0OS4xNjkwNzc0NDA1
