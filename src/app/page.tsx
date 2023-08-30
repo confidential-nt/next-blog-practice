@@ -1,3 +1,9 @@
+import ProfileCard from "@/components/ProfileCard";
+
 export default function HomePage() {
-  return <div>여기는 홈페이지</div>;
+  return (
+    <div className="flex justify-center items-center mb-12">
+      <ProfileCard />
+    </div>
+  );
 }

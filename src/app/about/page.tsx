@@ -1,3 +1,4 @@
+import ProfileCard from "@/components/ProfileCard";
 import { Metadata } from "next";
 import React from "react";
 
@@ -6,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  return <div>여기는 about 페이지</div>;
+  return (
+    <div className="flex justify-center items-center mb-8">
+      <ProfileCard />
+    </div>
+  );
 }
