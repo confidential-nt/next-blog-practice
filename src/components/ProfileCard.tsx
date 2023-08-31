@@ -13,7 +13,7 @@ export default function ProfileCard() {
         height={200}
         className="rounded-full"
       />
-      <h2 className="text-xl font-bold">Hi, I&apos;m Park.</h2>
+      <h3 className="text-xl font-bold">Hi, I&apos;m Park.</h3>
       <strong className="font-medium">Frontend Engineer</strong>
       <p className="text-sm mb-1">늘 최선을 다합니다.</p>
       <Link
