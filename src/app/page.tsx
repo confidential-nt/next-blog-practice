@@ -1,5 +1,6 @@
 import FeaturedPosts from "@/components/FeaturedPosts";
 import ProfileCard from "@/components/ProfileCard";
+import YouMayLike from "@/components/YouMayLike";
 
 export default function HomePage() {
   return (
@@ -9,6 +10,7 @@ export default function HomePage() {
         <ProfileCard />
       </section>
       <FeaturedPosts />
+      <YouMayLike />
     </>
   );
 }

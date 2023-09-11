@@ -10,7 +10,7 @@ type Props = {
 
 export default function PostCard({ post: { metadata, filename } }: Props) {
   return (
-    <li className="shadow-md rounded-md overflow-hidden">
+    <li className="shadow-md rounded-md overflow-hidden w-full">
       <Link href={`/posts/${filename}`}>
         <Image
           src={`/images/posts_thumbnails/${metadata.thumbnail}`}
