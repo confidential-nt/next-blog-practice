@@ -1,4 +1,4 @@
-import { getPostsMetadata } from "@/service/posts";
+import { getPostsMetadata } from "@/service/backend/posts";
 import React from "react";
 import PostCard from "./PostCard";
 

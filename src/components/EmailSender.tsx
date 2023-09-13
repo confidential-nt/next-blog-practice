@@ -1,6 +1,6 @@
 "use client";
 
-import { notifyFail, notifySuccess } from "@/service/toast";
+import { notifyFail, notifySuccess } from "@/service/frontend/toast";
 import React, { ChangeEvent, useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

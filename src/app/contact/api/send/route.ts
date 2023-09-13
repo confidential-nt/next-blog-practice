@@ -1,4 +1,4 @@
-import { sendEMail } from "@/service/email";
+import { sendEMail } from "@/service/backend/email";
 import { NextResponse } from "next/server";
 
 type EmailSendSuccess = {

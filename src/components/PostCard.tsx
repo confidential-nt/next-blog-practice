@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { PostMetadata } from "@/service/posts";
+import { PostMetadata } from "@/service/backend/posts";
 import Image from "next/image";
 import CategoryBadge from "./CategoryBadge";
 
