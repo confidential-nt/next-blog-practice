@@ -1,0 +1,8 @@
+.markdown-post-container > div {
+  @apply max-w-none;
+}
+
+.markdown-post-container > div a {
+  white-space: normal;
+  overflow-wrap: break-word;
+}

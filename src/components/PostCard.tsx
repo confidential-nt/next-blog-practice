@@ -19,9 +19,11 @@ export default function PostCard({ post: { metadata, filename } }: Props) {
           height={200}
           className="w-full"
         />
-        <div className="flex flex-col items-center justify-center relative py-6">
+        <div className="flex flex-col items-center justify-center relative py-6 px-3">
           <h3 className="font-bold">{metadata.title}</h3>
-          <p className="text-gray-600 mb-1">{metadata.description}</p>
+          <p className="text-gray-600 mb-1 line-clamp-1">
+            {metadata.description}
+          </p>
           <span className="absolute right-3 top-2 text-gray-600 text-sm">
             {metadata.date}
           </span>

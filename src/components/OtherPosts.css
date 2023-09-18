@@ -1,0 +1,37 @@
+.other-posts a svg {
+  transition: 0.3s;
+}
+
+.other-posts a:hover svg {
+  transform: scale(1.7);
+}
+.other-posts a .left,
+.other-posts a .right {
+  transition: 0.3s;
+}
+.other-posts a:hover .left {
+  transform: translateX(0.8%);
+}
+.other-posts a:hover .right {
+  transform: translateX(-0.8%);
+}
+
+.boj_thumbnail {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("/images/posts_thumbnails/boj_thumbnail.png");
+  @apply bg-no-repeat bg-cover bg-center;
+}
+
+.goormlevel_thumbnail {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("/images/posts_thumbnails/goormlevel_thumbnail.png");
+  @apply bg-no-repeat bg-cover bg-center;
+}

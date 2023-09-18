@@ -1,0 +1,3 @@
+.categories li.active {
+  @apply text-sky-500;
+}
