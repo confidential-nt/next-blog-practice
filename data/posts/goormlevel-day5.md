@@ -42,7 +42,7 @@ N개의 정수를 입력받으며 K번째 정수를 찾는다. N은 1이상 50�
 
 #### 구현
 
-```
+```python
 N, K = map(int, input().split())
 numbers = [[el,0] for el in map(int, input().split())]
 

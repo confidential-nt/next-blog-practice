@@ -38,7 +38,7 @@ N 만큼의 통증이 있고 이 통증을 A,B 라는 아이템으로 0 까지 �
 
 #### 구현
 
-```
+```python
 def solution():
 	N = int(input())
 	A,B = map(int, input().split())

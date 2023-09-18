@@ -40,7 +40,7 @@ N x N의 크기를 가지는 마을 행렬이 있다. 각 행렬에는 건물의
 
 이번에는 dfs를 사용하여 구현했다.
 
-```
+```python
 from collections import deque
 
 def solution():

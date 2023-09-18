@@ -40,7 +40,7 @@ https://level.goorm.io/l/challenge/goormthon-challenge
 
 #### 구현
 
-```
+```python
 def solution():
 	N = int(input())
 	S = input()
