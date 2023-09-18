@@ -6,6 +6,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./YouMayLike.css";
 import PostCard from "./PostCard";
+import { getPostsMetadataByFetching } from "@/service/frontend/api";
 
 const responsive = {
   desktop: {
@@ -38,9 +39,9 @@ export default function YouMayLike() {
   const [postsMetadata, setPostsMetadata] = useState<PostMetadata[]>([]);
 
   useEffect(() => {
-    fetch("/api/posts-metadata")
-      .then((res) => res.json())
-      .then(({ postsMetadata }) => setPostsMetadata(postsMetadata));
+    getPostsMetadataByFetching().then(({ postsMetadata }) =>
+      setPostsMetadata(postsMetadata)
+    );
   }, []);
 
   return (
