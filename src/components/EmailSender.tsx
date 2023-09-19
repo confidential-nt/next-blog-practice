@@ -1,6 +1,8 @@
 "use client";
 
+import { postEmailByFetching } from "@/service/frontend/api";
 import { notifyFail, notifySuccess } from "@/service/frontend/toast";
+import { emailValidation } from "@/service/frontend/validation";
 import React, { ChangeEvent, useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -27,13 +29,20 @@ export default function EmailSender() {
     setEmail((email) => ({ ...email, [name]: value }));
   };
 
+  const handleValidation = (email: Email) => {
+    try {
+      emailValidation(email);
+    } catch (error) {
+      notifyFail("이메일을 보내는 데 실패했습니다!");
+      return;
+    }
+  };
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    fetch("/contact/api/send", {
-      method: "POST",
-      body: JSON.stringify(email),
-    })
-      .then((res) => res.json())
+    handleValidation(email);
+
+    postEmailByFetching(email)
       .then(() => {
         setEmail({
           email: "",
