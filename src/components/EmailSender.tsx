@@ -3,7 +3,7 @@
 import { postEmailByFetching } from "@/service/frontend/api";
 import { notifyFail, notifySuccess } from "@/service/frontend/toast";
 import { emailValidation } from "@/service/frontend/validation";
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

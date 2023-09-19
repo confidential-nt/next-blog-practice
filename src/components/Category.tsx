@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { MouseEvent } from "react";
 import "./Category.css";
 
 type Props = {
@@ -9,14 +9,14 @@ type Props = {
 };
 
 export default function Category({ categories, onClick, filter }: Props) {
-  const handleClick = (e: MouseEvent<HTMLLIElement>) => {
-    if (e.target.tagName !== "LI") return;
+  const handleClick = (e: MouseEvent<HTMLUListElement>) => {
+    if ((e.target as HTMLElement).tagName !== "LI") return;
 
     const {
       dataset: { category },
-    } = e.target;
+    } = e.target as HTMLElement;
 
-    onClick(category);
+    onClick(category as string);
   };
 
   return (
