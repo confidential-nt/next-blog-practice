@@ -18,6 +18,7 @@ export default function MarkDownPost({ content }: Props) {
     <div className="markdown-post-container">
       <ReactMarkdown
         className="prose md:prose-lg lg:prose-xl prose-headings:font-bold"
+        // eslint-disable-next-line
         children={content}
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw as any, rehypeSanitize]}
