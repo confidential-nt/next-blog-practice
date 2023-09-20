@@ -3,6 +3,8 @@ import OtherPosts from "@/components/OtherPosts";
 import {
   getPostsByFilename as getPostByFilename,
   getPostsMetadataByFilename as getPostMetadataByFilename,
+  getPosts,
+  getPostsMetadata,
 } from "@/service/backend/posts";
 import Image from "next/image";
 import React from "react";
@@ -21,6 +23,13 @@ export async function generateMetadata({ params: { slug } }: Props) {
       absolute: `${postsMetadata?.filename}`,
     },
   };
+}
+
+export async function generateStaticParams() {
+  const postsMetadata = await getPostsMetadata();
+  return postsMetadata.map((p) => ({
+    slug: p.filename,
+  }));
 }
 
 export default async function PostsPage({ params: { slug } }: Props) {
